@@ -1,7 +1,7 @@
 # DLAFNet: Direct LiDAR-Aerial Fusion Network for Semantic Segmentation of 2D Multispectral Aerial Image and 3D LiDAR Point Cloud
 
 ## Abstract
-Abstract—Semantic segmentation of high-resolution remote sensing images (RSIs) is developing rapidly. For the semantic segmentation of 2D images, various architectures based on convolutional neural networks have emerged. Nowadays, the accuracy of segmentation has been continuously improved with the introduction of transformer-based models such as SegFormer and Swin Transformer. The methods of semantic segmentation of 3D LiDAR point cloud data, e.g. PointNet and Kernel Point Convolution (KPConv), also develop rapidly due to the emergence of 3D convolution. Multispectral image (MSI) can provide rich spectral information for semantic segmentation, while 3D LiDAR point cloud data can provide depth information. Thus, the semantic segmentation accuracy could be improved by fusing multispectral images and 3D LiDAR point cloud data. The traditional aerial image and LiDAR data fusion uses the DSM or other information obtained from the LiDAR point cloud and fuses the RSIs by adding depth channels. In this paper, we propose a method titled Direct LiDAR-Aerial Fusion Network (DLAFNet) which directly uses the multispectral image and LiDAR point cloud data for semantic Segmentation tasks. In particular, since the sparse features extracted from the KPConv branch are not as essential as features from MSI, we design LiDAR Assisted Attention Module (L-AAM). Our experiments on the modified GRSS18 dataset prove that our method is proper and obtains the best results by comparing with its components and other methods.  
+Semantic segmentation of high-resolution remote sensing images (RSIs) is developing rapidly. For the semantic segmentation of 2D images, various architectures based on convolutional neural networks have emerged. Nowadays, the accuracy of segmentation has been continuously improved with the introduction of transformer-based models such as SegFormer and Swin Transformer. The methods of semantic segmentation of 3D LiDAR point cloud data, e.g. PointNet and Kernel Point Convolution (KPConv), also develop rapidly due to the emergence of 3D convolution. Multispectral image (MSI) can provide rich spectral information for semantic segmentation, while 3D LiDAR point cloud data can provide depth information. Thus, the semantic segmentation accuracy could be improved by fusing multispectral images and 3D LiDAR point cloud data. The traditional aerial image and LiDAR data fusion uses the DSM or other information obtained from the LiDAR point cloud and fuses the RSIs by adding depth channels. In this paper, we propose a method titled Direct LiDAR-Aerial Fusion Network (DLAFNet) which directly uses the multispectral image and LiDAR point cloud data for semantic Segmentation tasks. In particular, since the sparse features extracted from the KPConv branch are not as essential as features from MSI, we design LiDAR Assisted Attention Module (L-AAM). Our experiments on the modified GRSS18 dataset prove that our method is proper and obtains the best results by comparing with its components and other methods.   
 
 <div align="center">
   <img src="resources/DLAFNet.png"/> 
@@ -9,9 +9,9 @@ Abstract—Semantic segmentation of high-resolution remote sensing images (RSIs)
 
 ## Data
 
-The original data is available from [2018 IEEE GRSS Data Fusion Challenge – Fusion of Multispectral LiDAR and Hyperspectral Data | Hyperspectral Image Analysis Lab (uh.edu)](https://hyperspectral.ee.uh.edu/?page_id=1075). The processed 2D GRSS data can be fouond in [here](https://pan.baidu.com/s/1scYaRvgtW1fGXzZaG2aGyg?pwd=cwpo )(password for BaiduNetdisk: cwpo)  
+The original data is available from [2018 IEEE GRSS Data Fusion Challenge – Fusion of Multispectral LiDAR and Hyperspectral Data | Hyperspectral Image Analysis Lab (uh.edu)](https://hyperspectral.ee.uh.edu/?page_id=1075). The processed 2D GRSS data can be fouond in [here](https://pan.baidu.com/s/1scYaRvgtW1fGXzZaG2aGyg?pwd=cwpo )(password for BaiduNetdisk: cwpo)
 
-Put your data on your path and change `DLAFNetCode\DLAFNet\configs\_base_\datasets\GRSS18_5.py` to your path. 
+Put your data on your own path and change the data path to your own path `DLAFNetCode\DLAFNet\configs\_base_\datasets\GRSS18_5.py`.  
 
 ## Results
 
@@ -22,7 +22,7 @@ Put your data on your path and change `DLAFNetCode\DLAFNet\configs\_base_\datase
 | MSI       | PSPNet     | 78.45 | 30.97   |
 | MSI       | Deeplab v3 | 78.45 | 26.37   |
 | MSI       | SegFormer  | 78.67 | 30.83   |
-| LiDAR     | PointNet   | 71.4  | 15.83   |
+| LiDAR     | PointNet   | 71.40 | 15.83   | 
 | LiDAR     | PointNet++ | 75.32 | 18.06   |
 | LiDAR     | KPConv     | 76.97 | 22.57   |
 | MSI-LiDAR | EDFT       | 79.25 | 31.15   |
@@ -51,7 +51,7 @@ We acknowledged the IEEE Geoscience and Remote Sensing Society Image Analysis an
 ```
 @INPROCEEDINGS{10282837,
   author={Liu, Wei and Wang, He and Qiao, Yicheng and Liang, Bin and Yang, Junli and Zhang, Haopeng},
-  booktitle={IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium}, 
+  booktitle={IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium},  
   title={Dlafnet: A Direct Fusion Method of 2D Aerial Image and 3D Lidar Point Cloud for Semantic Segmentation}, 
   year={2023},
   volume={},
