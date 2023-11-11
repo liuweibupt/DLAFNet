@@ -11,7 +11,7 @@ We acknowledged the IEEE Geoscience and Remote Sensing Society Image Analysis an
 
 The original data is available from [2018 IEEE GRSS Data Fusion Challenge – Fusion of Multispectral LiDAR and Hyperspectral Data | Hyperspectral Image Analysis Lab (uh.edu)](https://hyperspectral.ee.uh.edu/?page_id=1075). The processed 2D GRSS data can be fouond in [here](https://pan.baidu.com/s/1scYaRvgtW1fGXzZaG2aGyg?pwd=cwpo )(password for BaiduNetdisk: cwpo)
 
-Put your data on  `DLAFNetCode\DLAFNet\configs\_base_\datasets\GRSS18_5.py`.
+Put your data on your path and change `DLAFNetCode\DLAFNet\configs\_base_\datasets\GRSS18_5.py` to your path.
 
 
 
