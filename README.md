@@ -9,7 +9,7 @@ Semantic segmentation of high-resolution remote sensing images (RSIs) is develop
 
 ## Data
 
-The original data is available from [2018 IEEE GRSS Data Fusion Challenge – Fusion of Multispectral LiDAR and Hyperspectral Data | Hyperspectral Image Analysis Lab (uh.edu)](https://hyperspectral.ee.uh.edu/?page_id=1075). The processed 2D GRSS data can be fouond in [here](https://pan.baidu.com/s/1scYaRvgtW1fGXzZaG2aGyg?pwd=cwpo )(password for BaiduNetdisk: cwpo)
+The original data is available from [2018 IEEE GRSS Data Fusion Challenge – Fusion of Multispectral LiDAR and Hyperspectral Data | Hyperspectral Image Analysis Lab (uh.edu)](https://hyperspectral.ee.uh.edu/?page_id=1075). The processed 2D GRSS18 data can be fouond in [here](https://pan.baidu.com/s/1scYaRvgtW1fGXzZaG2aGyg?pwd=cwpo )(password for BaiduNetdisk: cwpo) 
 
 You can download the transformed data and put it under your path, and change the path of the dataset in the dataset configuration file `DLAFNetCode\DLAFNet\configs\_base_\datasets\GRSS18_5.py` to the path you have set yourself.   
 
