@@ -13,7 +13,7 @@ The original data is available from [2018 IEEE GRSS Data Fusion Challenge – Fu
 
 You can download the transformed data and put it under your path, and change the path of the dataset in the dataset configuration file `\DLAFNet\configs\_base_\datasets\GRSS18_5.py` to the path you have set yourself.    
 
-You can refer to the [KPConv](https://github.com/HuguesTHOMAS/KPConv) for 3D branching data processing, and get the features of different stages and process them through the pseudo-code of the paper, and save them as corresponding files for your convenience.    
+You can refer to the [KPConv](https://github.com/HuguesTHOMAS/KPConv) for 3D branching data processing, and get the features of different stages and process them through the pseudo-code of the paper, and save them as corresponding files for your convenience. We also provide the test data, you can get them from [here](https://pan.baidu.com/s/1aY4lLqXbkWFRzIHudWRyfQ?pwd=b4bs ) and refer to it to construct your own train data.
 
 ## Results
 
