@@ -1,7 +1,7 @@
 # DLAFNet: Direct LiDAR-Aerial Fusion Network for Semantic Segmentation of 2D Aerial Image and 3D LiDAR Point Cloud
 
 ## Abstract
-Semantic segmentation of high-resolution remote sensing images (RSIs) is developing rapidly. For the semantic segmentation of 2D images, various architectures based on convolutional neural networks have emerged. Nowadays, the accuracy of segmentation has been continuously improved with the introduction of transformer-based models such as SegFormer and Swin Transformer. The methods of semantic segmentation of 3D LiDAR point cloud data, e.g. PointNet and Kernel Point Convolution (KPConv), also develop rapidly due to the emergence of 3D convolution. Multispectral image (MSI) can provide rich spectral information for semantic segmentation, while 3D LiDAR point cloud data can provide depth information. Thus, the semantic segmentation accuracy could be improved by fusing multispectral images and 3D LiDAR point cloud data. The traditional aerial image and LiDAR data fusion uses the DSM or other information obtained from the LiDAR point cloud and fuses the RSIs by adding depth channels. In this paper, we propose a method titled Direct LiDAR-Aerial Fusion Network (DLAFNet) which directly uses the multispectral image and LiDAR point cloud data for semantic Segmentation tasks. In particular, since the sparse features extracted from the KPConv branch are not as essential as features from MSI, we design LiDAR Assisted Attention Module (L-AAM). Our experiments on the modified GRSS18 dataset prove that our method is proper and obtains the best results by comparing with its components and other methods.      
+Semantic segmentation of high-resolution remote sensing images (RSIs) is developing rapidly. For the semantic segmentation of 2D images, various architectures based on convolutional neural networks have emerged. Nowadays, the accuracy of segmentation has been continuously improved with the introduction of transformer-based models such as SegFormer and Swin Transformer. The methods of semantic segmentation of 3D LiDAR point cloud data, e.g. PointNet and Kernel Point Convolution (KPConv), also develop rapidly due to the emergence of 3D convolution. Very high resolution RGB imagery (RGB) can provide rich spectral information for semantic segmentation, while 3D LiDAR point cloud data can provide depth information. Thus, the semantic segmentation accuracy could be improved by fusing multispectral images and 3D LiDAR point cloud data. The traditional aerial image and LiDAR data fusion uses the DSM or other information obtained from the LiDAR point cloud and fuses the RSIs by adding depth channels. In this paper, we propose a method titled Direct LiDAR-Aerial Fusion Network (DLAFNet) which directly uses the multispectral image and LiDAR point cloud data for semantic Segmentation tasks. In particular, since the sparse features extracted from the KPConv branch are not as essential as features from RGB, we design LiDAR Assisted Attention Module (L-AAM). Our experiments on the modified GRSS18 dataset prove that our method is proper and obtains the best results by comparing with its components and other methods.      
 
 <div align="center">
   <img src="resources/DLAFNet.png"/> 
@@ -19,16 +19,16 @@ You can refer to the [KPConv](https://github.com/HuguesTHOMAS/KPConv) for 3D bra
 
 | Data      | Model      | OA(%) | mIoU(%) |
 | --------- | ---------- | ----- | ------- |
-| MSI       | FCN        | 75.03 | 28.23   |
-| MSI       | DANet      | 78.08 | 28.66   |
-| MSI       | PSPNet     | 78.45 | 30.97   |
-| MSI       | Deeplab v3 | 78.45 | 26.37   |
-| MSI       | SegFormer  | 78.67 | 30.83   |
+| RGB       | FCN        | 75.03 | 28.23   |
+| RGB       | DANet      | 78.08 | 28.66   |
+| RGB       | PSPNet     | 78.45 | 30.97   |
+| RGB       | Deeplab v3 | 78.45 | 26.37   |
+| RGB       | SegFormer  | 78.67 | 30.83   |
 | LiDAR     | PointNet   | 71.40 | 15.83   |  
 | LiDAR     | PointNet++ | 75.32 | 18.06   | 
 | LiDAR     | KPConv     | 76.97 | 22.57   |
-| MSI-LiDAR | EDFT       | 79.25 | 31.15   | 
-| MSI-LiDAR | DLAFNet    | 79.88 | 31.94   |
+| RGB-LiDAR | EDFT       | 79.25 | 31.15   | 
+| RGB-LiDAR | DLAFNet    | 79.88 | 31.94   |
 
 DLAFNet best mIoU results for models able to be found from [here](https://pan.baidu.com/s/1O1qGekBoDRPg4sLoSE7FMw?pwd=pvuk ). 
 
